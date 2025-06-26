@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Savory Elegance Catering</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #1a1a1a;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #000;
+      color: #f7c873;
+      padding: 2rem;
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #111;
+      padding: 1rem;
+    }
+    nav a {
+      color: #f7c873;
+      text-decoration: none;
+      margin: 0.5rem 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease-in-out;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #f7c873;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+    li {
+      background: #2a2a2a;
+      padding: 1rem;
+      border-left: 4px solid #f7c873;
+      margin-bottom: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      background-color: #2a2a2a;
+      color: #fff;
+    }
+    button {
+      padding: 0.75rem;
+      background-color: #f7c873;
+      border: none;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #ffc14d;
+    }
+    footer {
+      background-color: #000;
+      color: #888;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Savory Elegance Catering</h1>
+    <p>Elegant Moments. Unforgettable Flavors.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#menu">Menu</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Savory Elegance Catering, we create unforgettable culinary experiences by delivering high-quality, gourmet dishes with exceptional service. We aim to bring people together through the art of fine dining, making every gathering an extraordinary moment.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>We offer premium catering for weddings, corporate events, private parties, and more—customized menus, elegant presentations, and flawless service every time.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Menu Highlights</h2>
+
+    <h3>Appetizer</h3>
+    <ul>
+      <li>Lumpiang Togue with vinegar dip</li>
+      <li>Crispy vegetable spring rolls with tangy vinegar dip</li>
+    </ul>
+
+    <h3>Soup</h3>
+    <ul>
+      <li>Sinigang Soup</li>
+      <li>Sour soup with mixed vegetables</li>
+      <li>Pancit Bihon</li>
+      <li>Stir-fried noodles with vegetables and meat</li>
+    </ul>
+
+    <h3>Main Course</h3>
+    <ul>
+      <li>Adobong Manok — Chicken stewed in soy sauce and vinegar</li>
+      <li>Tender roast beef served with a creamy pink sauce</li>
+      <li>Lechong Baboy — Roasted pork with crispy skin</li>
+      <li>Grilled chicken breast topped with a rich mushroom sauce</li>
+      <li>Ginataang Kalabasa with Hipon — Creamy squash and shrimp in coconut milk</li>
+    </ul>
+
+    <h3>Side Dish</h3>
+    <ul>
+      <li>Salted Egg with tomato</li>
+      <li>Chopped salted egg mixed with onion and tomato</li>
+    </ul>
+
+    <h3>Dessert</h3>
+    <ul>
+      <li>Biko with Latik on top — Sweet sticky rice topped with coconut curds</li>
+    </ul>
+
+    <h3>Drinks</h3>
+    <ul>
+      <li>Blue Lemonade with Lemon Slices</li>
+      <li>Icy sweet drink with sago</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@savoryelegance.com</p>
+    <p>Phone: (123) 456-7890</p>
+    <p>Location: Metro Manila, Philippines</p>
+
+    <form action="#" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Savory Elegance Catering. All rights reserved.
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('section');
+    const reveal = () => {
+      sections.forEach(section => {
+        const top = section.getBoundingClientRect().top;
+        if (top < window.innerHeight - 50) {
+          section.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', reveal);
+    window.addEventListener('load', reveal);
+  </script>
+</body>
+</html>
